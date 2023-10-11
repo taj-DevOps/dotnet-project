@@ -19,7 +19,7 @@ jobs:
         dotnet-version: '2.1'
 
     - name: Restore dependencies
-      run: dotnet restore -p Core_HelloWorld.csproj
+      run: dotnet restore --project Core_HelloWorld.csproj
 
     - name: Build the project
       run: dotnet build
